@@ -78,15 +78,15 @@ public class AList {
 
     public String toString2() {
 
-        String[] CityNames = new String[master.length];
+        String[] Cityname = new String[master.length];
 
         for (int i = 0; i < master.length; i++) {
-            CityNames[i] = master[i].toString();
+            Cityname[i] = master[i].toString();
 
             if (i > 0)
-                returnable = returnable + ", " + CityNames[i];
+                returnable = returnable + ", " + Cityname[i];
             else
-                returnable = CityNames[i];
+                returnable = Cityname[i];
         }
         return returnable;
     }
@@ -127,6 +127,10 @@ public class AList {
             k--;
         }
         master = tmp;
+    }
+    public String getMasteratI(int i)
+    {
+        return master[i].toString();
     }
 }
 
