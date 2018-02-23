@@ -8,7 +8,7 @@ package edu.gcccd.csis;
 
 public class AList {
 
-    public Object[] master;
+    private Object[] master;
     private String returnable;
 
     public AList(Object[] oa) {
